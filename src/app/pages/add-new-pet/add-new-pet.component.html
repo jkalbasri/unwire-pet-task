@@ -1,0 +1,29 @@
+<!-- Add new pet  -->
+<div class="add-new-pet">
+    <!-- Form  -->
+    <form #simpleForm="ngForm" (ngSubmit)="submit(simpleForm.value)" class="form">
+        <!-- Title  -->
+        <h1 class="title">add new pet</h1>
+        <!-- Form  -->
+        <div class="form-control">
+            <label>name</label>
+            <input required ngModel type="text" name="name">
+        </div>
+        <!-- Form  -->
+        <div class="form-control">
+            <label>status</label>
+            <select required ngModel="available" name="status">
+                <option selected value="available">available</option>
+                <option value="pending">pending</option>
+                <option value="sold">sold</option>
+            </select>
+        </div>
+        <!-- Form  -->
+        <div class="form-control">
+            <button>submit</button>
+        </div>
+    </form>
+    <!-- Form  -->
+</div>
+<!-- Add new pet  -->
+

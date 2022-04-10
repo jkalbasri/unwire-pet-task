@@ -1,0 +1,55 @@
+.add-new-pet {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    margin-bottom: 100px;
+    .form {
+        width: 50%;
+        border: 1px solid #2222;
+        box-shadow: 5px 5px 5px #1111;
+        border-radius: 3px;
+        padding: 20px;
+        min-height: 400px;
+        min-width: 250px;
+        max-width: 1280px;
+        .title {
+            font-size: 2rem;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: 700;
+            padding-bottom: 50px;
+        }
+        .form-control {
+            label {
+                display: block;
+                font-size: 1.5rem;
+                text-transform: capitalize;
+                padding: 5px 0px;
+            }
+            input,
+            select {
+                min-width: 250px;
+                border: 1px solid #3333;
+                border-radius: 3px;
+                padding: 10px 0px;
+                text-indent: 10px;
+                font-size: 1.2rem;
+            }
+            select {
+                text-transform: capitalize;
+            }
+            button {
+                margin: 30px 0px;
+                padding: 10px 20px;
+                background: #256EFF;
+                color: #fff;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                font-weight: 700;
+                border: 0px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+}

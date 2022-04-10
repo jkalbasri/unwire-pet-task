@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    footer {
+        width: 100%;
+        padding: 30px 20px;
+        bottom: 0;
+        position: fixed;
+        background: #121420;
+        p {
+            color: #fff;
+            text-align: center;
+            font-weight: 1.5rem;
+            text-transform: capitalize;
+        }
+    }
+}

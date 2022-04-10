@@ -1,0 +1,122 @@
+.title {
+    font-size: 3rem;
+    color: #555;
+    text-align: center;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+.pets {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1280px;
+    margin: 20px auto;
+    list-style: none;
+    margin-bottom: 100px;
+    .pet {
+        padding: 10px;
+        border: 1px solid #2222;
+        box-shadow: 5px 5px 5px #1111;
+        border-radius: 3px;
+        cursor: pointer;
+        .poster {
+            img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        .name,
+        .status {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            display: block;
+            padding: 10px;
+            font-weight: 700;
+        }
+    }
+}
+
+.model {
+    display: grid;
+    place-items: center;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    .pet {
+        padding: 20px;
+        border: 1px solid #2222;
+        box-shadow: 5px 5px 5px #1111;
+        border-radius: 3px;
+        background: #fff;
+        .poster {
+            img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        .name,
+        .status {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            display: block;
+            padding: 10px;
+            font-weight: 700;
+        }
+        .btns {
+            display: flex;
+            gap: 20px;
+            button {
+                min-width: 100px;
+                padding: 10px;
+                border-radius: 3px;
+                border: 0;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                color: #fff;
+                cursor: pointer;
+            }
+            .buy-btn {
+                background: #256EFF;
+            }
+            .cancel-btn {
+                background: red;
+            }
+        }
+    }
+    .order {
+        min-width: 250px;
+        background: #fff;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: capitalize;
+            padding: 10px;
+        }
+        span {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        .btns {
+            button {
+                padding: 10px 20px;
+                font-size: 1.2rem;
+                color: #fff;
+                background: #256EFF;
+                border: 0px;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+<!-- Title  -->
+<h1 class="title">all pets</h1>
+<!-- Pets  -->
+<ul *ngIf="pets else elseBlock" class="pets">
+    <!-- Pet  -->
+    <li (click)="showModel($event,pet)" *ngFor="let pet of pets" class="pet">
+        <span class="poster">
+            <img [src]="imagePath" alt="poster">
+        </span>
+        <span class="name">name : {{pet.name}}</span>
+        <span class="status">status : {{pet.status}}</span>
+    </li>
+</ul>
+<!-- Else block -->
+<ng-template #elseBlock>
+    <app-loading-animation></app-loading-animation>
+</ng-template>
+
+<!-- This will show when someone click on any pet card   -->
+
+<div *ngIf="model" class="model">
+    <div class="pet">
+        <span class="poster">
+            <img [src]="imagePath" alt="poster">
+        </span>
+        <span class="name">name : {{name}}</span>
+        <span class="status">status : {{status}}</span>
+        <span class="btns">
+            <button (click)="buyPet()" class="buy-btn">buy</button>
+            <button (click)="hideModel($event)" class="cancel-btn">cancel</button>
+        </span>
+    </div>
+</div>
+
+<!-- This orde model  -->
+<div *ngIf="orderModel" class="model">
+    <div class="order">
+        <h1>order</h1>
+        <span>orderid : {{orderData.id}}</span>
+        <span>petid : {{orderData.petId}}</span>
+        <span>shipdate : {{orderData.shipDate}}</span>
+        <span>quantity : {{orderData.quantity}}</span>
+        <span>completed : true</span>
+        <span class="btns">
+            <button (click)="hideOrderModel()" class="cancel-btn">okay</button>
+        </span>
+    </div>
+</div>

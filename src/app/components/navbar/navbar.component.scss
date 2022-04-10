@@ -1,0 +1,35 @@
+.header {
+    .nav {
+        background: #121420;
+        padding: 20px 10px;
+        .nav-ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            .logo {
+                a {
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .add-btn {
+                background: #256EFF;
+                border: 0px;
+                border-radius: 3px;
+                cursor: pointer;
+                a {
+                    display: block;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
